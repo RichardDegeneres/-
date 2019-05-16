@@ -1,0 +1,2 @@
+<view>{{counter}}</view>
+<view>{{name}}</view>

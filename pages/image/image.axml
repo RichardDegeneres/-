@@ -1,0 +1,9 @@
+<view style="width: 100%">
+  <view a:for="{{array}}" a:for-item="item">
+    <view>{{item.text}}</view>
+    <image style="background-color: #eeeeee; width: 100%; height: 230px;" src="{{src}}" mode="{{item.mode}}" onError="imageError" onLoad="imageLoad"/>
+  </view>
+  <view style="margin: 10px; text-align:center; background: lightblue">
+    <navigator url="../canvas/canvas"> 跳转至 canvas 页面</navigator>
+  </view>
+</view>

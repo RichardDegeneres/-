@@ -1,0 +1,72 @@
+<view style="background:lightblue">
+  <view>checkbox,label 套 cbheckbox</view>
+  <checkbox-group>
+  <view> 
+    <label>
+      <checkbox value="aaa"/>
+      <text>aaa</text>
+    </label>
+  </view>
+  <view> 
+    <label>
+      <checkbox/>
+      <text>bbb</text>
+    </label>
+  </view>
+  </checkbox-group>
+  <view>
+    <view>多个checkbox，一个 label</view>
+    <view>
+      <checkbox-group>
+        <label>
+          <checkbox>选中我</checkbox>
+          <checkbox>选不中我</checkbox>
+          <checkbox>选不中我</checkbox>
+          <text>Click</text>
+        </label>
+      </checkbox-group>
+    </view>
+  </view>
+</view>
+
+
+<view>
+ <view>Radio,for</view>
+
+  <!-- <view> -->
+    <radio-group>
+      <view>
+        <!-- error: -->
+        <radio value="c" id="cc"/>
+        <label for="cc">c</label>
+        <!-- <label>
+          <radio value="1"/>
+          <text>111</text>
+        </label> -->
+      </view>
+      <view>
+         <radio value="aaa" id="a"/>
+        <label for="a">aaa</label>
+        <!-- <label>
+          <radio value="222"/>
+          <text>222</text>
+        </label> -->
+      </view>
+    </radio-group>    
+  <!-- </view>  -->
+</view>
+</view>
+<view class="section">
+  <view class="title">Radio，通过 for 属性关联
+    <radio-group>
+      <view>
+        <radio id="e" value="111" />
+        <label for="e">111</label>
+      </view>
+      <view>
+        <radio id="wewe" value="222" />
+        <label for="wewe">222</label>
+      </view>
+    </radio-group>
+  </view>
+</view>

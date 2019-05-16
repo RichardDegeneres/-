@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/map/map",
+    "pages/canvas/canvas",
+    "pages/image/image",
+    "pages/picker/picker",
+    "pages/input/input",
+    "pages/label/label",
+    "pages/form/form",
+    "pages/button/button",
+    "pages/basic/basic",
+    "pages/scroll/scroll",
+    "pages/counter/counter",
+    "pages/todos/todos",    
+    "pages/add-todo/add-todo"
+    
+  ],
+  "window": {
+    "defaultTitle": "支付宝小程序",
+    "titleBarColor": "#55d"
+  }
+}

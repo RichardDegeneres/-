@@ -1,0 +1,2 @@
+<counter pCounter="{{counter}}" />
+<button onTap="plus">+{{counter}}</button>

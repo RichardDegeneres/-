@@ -1,0 +1,35 @@
+<!-- picker-view 无效 -->
+<!-- <view>
+  <view>
+    <picker-view value="{{value}}" onChange="onChange">
+      <picker-view-column>
+        <view>2013</view>
+        <view>2014</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view>春</view>
+        <view>夏</view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+  <view>{{value}}</view>
+</view> -->
+
+<view>
+  <view>地区选择器</view>
+  <picker onChange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view>
+      当前选择： {{array[index]}}
+    </view>
+  </picker>
+   <picker onChange="bindObjPickerChange" value="{{arrIndex}}" range="{{objectArray}}" range-key="name">
+    <view>
+      <view>当前选择：{{objectArray[arrIndex].name}}</view>
+    </view>
+  </picker>
+  <view>Navigatior</view>
+  <navigator url="/pages/input/input">跳转到 input 页面</navigator>
+  <navigator url="/pages/counter/counter" open-type="redirect">在当前页面打开</navigator>
+  <!-- <navigator url="/pages/counter/counter" open-type="switchTab">切换 Tab</navigator> -->
+</view>
+</view>

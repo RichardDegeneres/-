@@ -1,0 +1,25 @@
+<view style="background: lightBlue">
+  <input placeholder="点击按钮，聚焦input" value="{{inputValue}}"/>
+  <input onInput="bindKeyInput" placeholder="输入同步到view中" maxlength="10" focus="{{focus}}"/>
+  <input type="digit" placeholder="带小数点的数字键盘"/>
+  <input password type="number" placeholder="数字密码输入键盘"/>
+  <input type="idcard" placeholder="身份证输入键盘"/>
+  <button onTap="bindButtonTap">Click me </button>
+  <form>
+    <textarea auto-height placeholder="自动变高" name="textarea"/>
+    <button form-type="submit">提交</button>
+  </form>
+  <radio-group onChange="radioChange">
+    <label a:for="{{radio}}" style="margin:40px; border:1px solid pink">
+      <radio value="{{item.value}}" style="margin-right:10px; border:1px solid yellow"/>{{item.name}}
+    </label>
+  </radio-group>
+  <switch checked="true" color="#f8f" style="margin-left:40px;"/>
+  <checkbox-group onChange="checkboxChange" style="margin:20px;">
+    <label a:for="{{checkBox}}" style="margin:10px; border:1px solid #ff8">
+      <checkbox color="#8ff" value="{{item.value}}" checked="{{item.checked}}" disabled="{{item.disabled}}" style="margin-right:3px;"/>{{item.name}}
+    </label>
+  </checkbox-group>
+  <slider min="25" max="50" step="5" value="30" show-value style="margin-bottom:20px"/>
+  <slider min="50" max="200" value="100" show-value backgroundColor="#ff8" style="margin-bottom:20px" activeColor="#8F8" handleColor="#8d8" handleSize="20" trackSize="2"/>
+</view>

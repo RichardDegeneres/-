@@ -1,0 +1,29 @@
+<!-- <block a:for="{{iconType}}">
+  <view>
+    <icon type="{{item}}" aria-label="{{item}}" size="45"></icon>
+    <text>{{item}}</text>
+  </view>  
+</block>
+<block a:for="{{iconSize}}">
+  <view>
+    <icon size="{{item}}" type="success"></icon>
+    <text>{{item}}</text>
+  </view>  
+</block>  -->
+<view style="width: 100%">
+  <block a:for="{{iconColor}}">
+    <view>
+      <icon size="45" color="{{item}}" type="success"></icon>
+      <text style="color: {{item}}">{{item}}</text>
+    </view>  
+  </block> 
+  <view>
+  <progress percent="20" show-info style="background-color: lightblue"/>
+  </view>
+  <view style="margin: 20px 0">
+  <progress percent="40" active color="yellow" stroke-width="10"/>
+  </view>
+  <view style="margin-top: 30px;">
+  <rich-text nodes="{{nodes}}" onTap="tap" style="width: 100px; height: 100px;border: 3px solid pink"></rich-text>
+</view>
+</view>

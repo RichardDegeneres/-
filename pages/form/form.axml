@@ -1,0 +1,34 @@
+<form style="width: 50%" onSubmit="onSubmit" onReset="onReset" report-submit="true">
+  <view>
+    <view>switch</view>
+    <switch name="switch" />
+  </view>
+  <view>
+    <view>slider</view>
+    <slider name="slider" min="1" max="10" step="1" />
+  </view>
+  <view>
+    <view>input</view>
+    <input name="input" placeholder="please input here"/>
+  </view>
+  <view>
+    <view>radio</view>
+    <radio-group>
+      <label a:for="{{radio}}">
+        <radio value="{{item.value}}" />{{item.name}}
+      </label>
+    </radio-group>
+  </view>
+  <view>
+    <view>checkbox</view>
+    <checkbox-group>
+      <label a:for="{{checkbox}}">
+        <checkbox value="{{item.value}}" />{{item.name}}
+      </label>
+    </checkbox-group>
+  </view>
+  <view>
+    <button formType="submit">Submit</button>
+    <button formType="reset">Reset</button>
+  </view>
+</form>  

@@ -1,0 +1,16 @@
+<view>
+  <view>
+    <view>Type</view>
+    <button type="default">default</button>
+    <button type="primary">primary</button>
+    <button type="warn">warn</button>
+    <button type="default" plain>plain</button>
+    <button type="default" disabled>disabled</button>
+    <button type="default" loading="true">loading</button>
+    <button type="default" hover-class="red" size="mini">hover-red</button>
+    <form onSubmit="onSubmit" onReset="onReset">
+      <button form-type="submit">submit</button>
+      <button form-type="reset">reset</button>
+    </form>
+  </view>
+</view>

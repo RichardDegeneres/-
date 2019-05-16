@@ -1,0 +1,45 @@
+<!-- <view class="page">
+  <view class="page-description">可滚动视图区域</view>
+  <view class="page-section">
+    <view>vertical scroll</view>
+    <view>
+      <scroll-view scroll-y="{{true}}" onScrollToUpper="'upper" onScrollToLower="lower" onScroll="scroll" scroll-top="{{scrollTop}}" style="width: 20%; height: 50px; border: 3px solid black;">
+        <view id="blue" class="scroll-view-item bc_blue">1111111111111</view>
+        <view id="red" class="scroll-view-item bc_red">2222222222222</view>
+        <view id="green" class="scroll-view-item bc_green">3333333333333</view>
+        <view id="yellow" class="scroll-view-item bc_yellow">4444444444444</view>
+        <view id="pink" class="scroll-view-item bc_pink">5</view>
+      </scroll-view>
+      <view >
+        <view onTap="tap" style="border: 1px solid green;">next</view>
+        <view onTap="tapMove" style="border: 1px solid green;">move</view>
+        <view onTap="scrollToTop" style="border: 1px solid green;">scrollToTop</view>
+      </view>
+    </view>
+  </view>
+</view> -->
+<!-- <view class="page"  style="border:1px solid yellow; width: 100%">
+  <view class="page-description">cover-view</view>
+  <view class="page-section">
+    <view style="position: relative">
+       <map
+        longitude="{{longitude}}"
+        latitude="{{latitude}}"
+        scale="{{scale}}"
+        style="width: 100%; height: 200px;"
+        include-points="{{includePoints}}"
+      />
+      <cover-view >
+        <cover-view style="background:blue ">1</cover-ciew> 
+        <cover-view >2</cover-ciew> 
+        <cover-view style="background:green;">3</cover-ciew> 
+      </cover-ciew>  
+      <cover-image  src="./image/picture.jpg" style="width: 80px; height:80px"/>
+    </view>
+  </view>
+</view> -->
+<movable-area style="width:100px;height:100px;background-color:red;margin-left:100px">
+  <movable-view direction="vertical" x="{{10}}" y="{{10}}"  style="width: 40px;height: 40px;background-color: rgba(0, 0, 0, 0.5);">
+    <view>mov</view>
+  </movable-view>  
+</movable-area>  

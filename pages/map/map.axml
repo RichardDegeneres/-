@@ -1,0 +1,15 @@
+<view>
+  <map id="map" longitude="120.131441" latitude="30.279383" scale="{{scale}}" controls="{{controls}}"
+  onControlTap="controltap" markers="{{markers}}"
+  onMarkerTap="markertap"
+  polyline="{{polyline}}" circles="{{circles}}"
+  onRegionChange="regionchange"
+  onTap="tap"
+  show-location style="width: 100%; height: 300px;"
+  include-points="{{includePoints}}"></map>
+  <button onTap="changeScale">改scale</button>
+  <button onTap="getCenterLocation">getCenterLocation</button>
+  <button onTap="moveToLocation">moveToLocation</button>
+  <button onTap="changeCenter">改center</button>
+  <button onTap="changeMarkers">改markers</button>
+</view>

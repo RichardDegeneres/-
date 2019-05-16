@@ -1,0 +1,4 @@
+<view>
+  <canvas id="canvas" onTouchStart="log" onTouchMove="log" onTouchEnd="log" width="400px" height="600px"/>
+  <navigator url="../map/map">跳转至 map 页面</navigator>
+</view>
